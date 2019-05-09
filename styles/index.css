@@ -12,33 +12,55 @@
 
 
 
+
 /* Start Here */
 
 /* When you display: flex; your items will automatically go horizontal.  Keep your items this way unless the directions specify otherwise. */
 
 /* Center all the items in container 1*/
 .row-1 {
-  
+  justify-content: center;
 }
 
 
 /* Keep all the items stacked vertically. Center all the items in container 2.  */
 .row-2 {
- 
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Reverse the order of the items.  Space each item evenly between themselves. */
 .row-3 {
-
+  flex-direction: row-reverse;
+  justify-content: space-between;
 }
 
 /* Give container 4 a height of 300px. Space each item so that there is equal distance around them.  Move the boxes to the bottom of your 300px height.  */
 .row-4 {
-
+  height: 300px;
+  justify-content: space-evenly;
+  align-items: flex-end;
 }
 
 /* Finally, make the first row's boxes gray, second row teal, third row orange, fourth row purple */
 .row-1 .item {
-
+  background: gray
 }
 
+.row-2 .item {
+  background: teal;
+}
+
+.row-3 .item {
+  background: orange;
+}
+
+.row-4 .item {
+  background: purple;
+}
+
+footer {
+  width: 100%;
+  background: aquamarine;
+  border: 2px solid dodgerblue; 
+}
